@@ -24,7 +24,8 @@ Licensed under the GNU Lesser General Public License version 3 (https://www.gnu.
     padding: 4px 2px;
     margin: 0 2px 0 3px;
     cursor: normal;
-    line-height:100%;
+    line-height: 16px;
+    height: 16px;
 }
 .b-m-idisable
 {
@@ -43,16 +44,22 @@ Licensed under the GNU Lesser General Public License version 3 (https://www.gnu.
     background:none;
 }
 .b-m-item img, .b-m-ifocus img, .b-m-idisable img {
-	margin-right: 8px;
+    /*margin-right: 8px;*/
 }
 .b-m-ifocus {
-	background: url(images/contextmenu/m_item.gif) repeat-x bottom;
-	border: 1px solid #AACCF6;
-	padding: 3px 1px ;
+    background: url(images/contextmenu/m_item.gif) repeat-x bottom;
+    border: 1px solid #AACCF6;
+    padding: 3px 1px ;
     margin: 0 2px 0 3px;
     cursor: normal;
-    line-height:100%;
+    line-height:16px;
+    height: 16px;
 }
 .b-m-idisable img {
 	visibility:hidden;
 }
+
+.b-m-item span, .b-m-ifocus span, .b-m-idisable span {
+  margin-left: 24px;
+}
+
