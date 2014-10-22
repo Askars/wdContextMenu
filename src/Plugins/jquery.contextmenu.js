@@ -29,7 +29,6 @@ Licensed under the GNU Lesser General Public License version 3 (https://www.gnu.
         };
         var buildItem = function(obj) {
             var T = this;
-            T.title = obj.text;
             T.idx = obj.alias;
             T.gidx = obj.gidx;
             T.data = obj;
