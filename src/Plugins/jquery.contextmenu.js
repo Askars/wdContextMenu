@@ -10,7 +10,7 @@ Licensed under the GNU Lesser General Public License version 3 (https://www.gnu.
         option = $.extend({ alias: "cmroot", width: 150 }, option);
         var ruleName = null, target = null,
 	    groups = {}, mitems = {}, actions = {}, showGroups = [],
-        itemTpl = "<div class='b-m-$[type]' unselectable=on><nobr unselectable=on><img src='$[icon]' align='absmiddle'/><span unselectable=on>$[text]</span></nobr></div>";
+        itemTpl = "<div class='b-m-$[type]' unselectable=on><nobr unselectable=on><span unselectable=on>$[text]</span></nobr></div>";
         var gTemplet = $("<div/>").addClass("b-m-mpanel").attr("unselectable", "on").css("display", "none");
         var iTemplet = $("<div/>").addClass("b-m-item").attr("unselectable", "on");
         var sTemplet = $("<div/>").addClass("b-m-split");
@@ -33,7 +33,7 @@ Licensed under the GNU Lesser General Public License version 3 (https://www.gnu.
             T.gidx = obj.gidx;
             T.data = obj;
             T.innerHTML = itemTpl.replace(/\$\[([^\]]+)\]/g, function() {
-                return obj[arguments[1]];
+				return obj[arguments[1]];
             });
             if (obj.disable) {
                 T.disable = obj.disable;
