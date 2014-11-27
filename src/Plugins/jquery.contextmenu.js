@@ -16,8 +16,8 @@ Licensed under the GNU Lesser General Public License version 3 (https://www.gnu.
         var sTemplet = $("<div/>").addClass("b-m-split");
         
         // Create special div for housing the menu (doesn't overcome the restriction of one menu per page)
-        if ($("cm_base_div").length) {
-            $("cm_base_div").html = "";
+        if ($("#cm_base_div").length) {
+            $("#cm_base_div").html = "";
         } else {
             var cm = document.createElement('div');
             cm.id = "cm_base_div";
@@ -33,7 +33,7 @@ Licensed under the GNU Lesser General Public License version 3 (https://www.gnu.
                 this.disable = obj.disable;
                 this.className = "b-m-idisable";
             }
-            $(this).width(obj.width).click(returnfalse).mousedown(returnfalse).appendTo($(cm));
+            $(this).width(obj.width).click(returnfalse).mousedown(returnfalse).appendTo($("#cm_base_div"));
             obj = null;
             return this;
         };
