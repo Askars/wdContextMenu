@@ -17,7 +17,7 @@ Licensed under the GNU Lesser General Public License version 3 (https://www.gnu.
         
         // Create special div for housing the menu (doesn't overcome the restriction of one menu per page)
         if ($("#cm_base_div").length) {
-            $("#cm_base_div").html = "";
+           $("#cm_base_div").html("");
         } else {
             var cm = document.createElement('div');
             cm.id = "cm_base_div";
