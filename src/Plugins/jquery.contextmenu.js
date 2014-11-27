@@ -141,7 +141,9 @@ Licensed under the GNU Lesser General Public License version 3 (https://www.gnu.
         };
         function disable(alias, disabled) {
             var item = mitems[alias];
-            item.className = (item.disable = item.lastChild.disabled = disabled) ? "b-m-idisable" : "b-m-item";
+            if (item != null) {
+                item.className = (item.disable = item.lastChild.disabled = disabled) ? "b-m-idisable" : "b-m-item";
+            }
         };
 
         /* to show menu  */
